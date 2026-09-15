@@ -1,35 +1,47 @@
-# LINEN CLOUD 画像素材の出所記録(雛形)
+# LINEN CLOUD 画像素材の出所記録
 
-`_generation-prompts.md`のプロンプトで画像を生成したら、下表を埋めてください。
-SUNNYSIDE(`cafe-sample/img/photo-credits.md`)と同じ記録フォーマットです。
+`img/_generation-prompts.md`のプロンプトをGemini(Google、Web版、gemini.google.com)で
+生成。SUNNYSIDE(`cafe-sample/img/photo-credits.md`)と同じ記録フォーマット。
 
-## 実写系(12点)
-
-| ファイル名 | 用途 | 生成ツール | 生成日 | 商用利用確認 | 実在人物/他社ロゴ模倣なしの確認 |
-|---|---|---|---|---|---|
-| `hero-fabric.jpg` | Hero背景 | | | | |
-| `hero-button.png` | Hero装飾 | | | | |
-| `collection-1.jpg` | Cloud Cardigan | | | | |
-| `collection-2.jpg` | Linen Slip Dress | | | | |
-| `collection-3.jpg` | Ribbed Socks Set | | | | |
-| `collection-4.jpg` | Linen Sun Hat | | | | |
-| `craft-fabric.jpg` | Craft/Story背景 | | | | |
-| `details-stitch.jpg` | Detailsクローズアップ | | | | |
-| `gallery-1.jpg` | うしろ姿 | | | | |
-| `gallery-2.jpg` | てのひら | | | | |
-| `gallery-3.jpg` | あしもと | | | | |
-| `gallery-4.jpg` | シルエット | | | | |
-
-## イラスト系(任意・3点)
+## 実写系(12点・全て生成済み)
 
 | ファイル名 | 用途 | 生成ツール | 生成日 | 商用利用確認 | 実在人物/他社ロゴ模倣なしの確認 |
 |---|---|---|---|---|---|
-| `illustration-linen-plant.png` | 挿絵(未配置) | | | | |
-| `illustration-thread-spool.png` | 挿絵(未配置) | | | | |
-| `illustration-cloud-sheep.png` | 挿絵(未配置) | | | | |
+| `hero-fabric.jpg` | Hero背景 | Gemini(Web版) | 2026-09-15 | 実在ブランド・人物の模倣なし。Googleアカウントの利用規約範囲内での生成 | 確認済み(生地のみ、ロゴ・人物なし) |
+| `hero-button.png` | Hero装飾 | Gemini(Web版) | 2026-09-15 | 同上 | 確認済み(ボタン単体、ロゴ・人物なし) |
+| `collection-1.jpg` | Cloud Cardigan | Gemini(Web版) | 2026-09-15 | 同上 | 確認済み(商品のみ、人物なし) |
+| `collection-2.jpg` | Linen Slip Dress | Gemini(Web版) | 2026-09-15 | 同上 | 確認済み(商品のみ、人物なし) |
+| `collection-3.jpg` | Ribbed Socks Set | Gemini(Web版) | 2026-09-15 | 同上 | 確認済み(商品のみ、人物なし) |
+| `collection-4.jpg` | Linen Sun Hat | Gemini(Web版) | 2026-09-15 | 同上 | 確認済み(商品のみ、人物なし) |
+| `craft-fabric.jpg` | Craft/Story背景 | Gemini(Web版) | 2026-09-15 | 同上 | 確認済み(生地のみ、人物なし) |
+| `details-stitch.jpg` | Detailsクローズアップ | Gemini(Web版) | 2026-09-15 | 同上 | 確認済み(生地・タグのみ、人物なし) |
+| `gallery-1.jpg` | うしろ姿 | Gemini(Web版) | 2026-09-15 | 同上 | **顔・表情は一切写っていないことを目視確認済み**(後ろ姿のみ、頭髪の一部のみ視認可) |
+| `gallery-2.jpg` | てのひら | Gemini(Web版) | 2026-09-15 | 同上 | **顔・表情は一切写っていないことを目視確認済み**(手のみのクローズアップ) |
+| `gallery-3.jpg` | あしもと | Gemini(Web版) | 2026-09-15 | 同上 | **顔・表情は一切写っていないことを目視確認済み**(膝から下のみ) |
+| `gallery-4.jpg` | シルエット | Gemini(Web版) | 2026-09-15 | 同上 | **顔・表情は一切写っていないことを目視確認済み**(強い逆光による完全なシルエット、輪郭のみ) |
+
+## イラスト系(任意・3点、全て生成済み・HTML未配置)
+
+| ファイル名 | 用途 | 生成ツール | 生成日 | 商用利用確認 | 実在人物/他社ロゴ模倣なしの確認 |
+|---|---|---|---|---|---|
+| `illustration-linen-plant.png` | 挿絵(未配置・予備) | Gemini(Web版) | 2026-09-15 | 実在ブランド・人物の模倣なし | 確認済み(線画イラスト、実在の図版の模写ではなくオリジナル生成) |
+| `illustration-thread-spool.png` | 挿絵(未配置・予備) | Gemini(Web版) | 2026-09-15 | 同上 | 確認済み(線画イラスト、オリジナル生成) |
+| `illustration-cloud-sheep.png` | 挿絵(未配置・予備) | Gemini(Web版) | 2026-09-15 | 同上 | 確認済み(線画イラスト、オリジナル生成) |
 
 ## 確認事項メモ
 
-- 子供の顔・表情が特定できるカットは不採用としたか
-- 生成AIの利用規約上、商用サイトへの掲載が許可されているか(ツールごとの利用規約を確認)
-- 実在ブランドのロゴ・パッケージデザインを模倣していないか
+- **子供の顔・表情が特定できるカットは不採用としたか** → 対応済み。gallery-1〜4はいずれも
+  生成直後にズームで拡大確認し、顔が判別できないことを目視で確認した上で採用
+- 生成AIの利用規約上、商用サイトへの掲載が許可されているか → Gemini(Google)の生成コンテンツは
+  Google利用規約の範囲内。本件は架空ブランドのサンプルサイト(営業デモ)用途であり、実在の
+  人物・団体を描写した生成物は使用していない
+- 実在ブランドのロゴ・パッケージデザインを模倣していないか → 全プロンプトで無地・ロゴなしを
+  明示指定。生成結果にもロゴ・ブランド標章の写り込みなし
+
+## 生成プロセスの補足
+
+画像生成はブラウザ自動操作(claude-in-chrome)でGemini Web版を操作し、日奈子さんの既存ログイン
+セッション上で実施(パスワード等の認証情報操作は行っていない)。生成された画像はGeminiのUI上の
+ダウンロード機能ではなく、ブラウザの画面キャプチャ経由で取得し(ダウンロードされたファイルへの
+直接アクセスができない実行環境だったため)、Pillowで角丸の除去・余白トリミング・白背景の透過処理
+(イラスト3点+hero-button)を行った上でファイル名を割り当てて保存した。
