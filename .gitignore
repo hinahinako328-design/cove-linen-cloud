@@ -1,0 +1,6 @@
+node_modules/
+package-lock.json
+.DS_Store
+_pw_*.png
+_pw_check*.mjs
+.vercel

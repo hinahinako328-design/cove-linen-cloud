@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LINEN CLOUD — 肌にいちばん近いものだから、静かでいてほしい。</title>
+<meta name="description" content="オーガニックコットンとリネンでつくる、子供のための静かな衣服。LINEN CLOUD(架空ブランド) — Cove Studio サンプルサイト。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 固定サイドレールナビ: スクロール進捗 + セクション番号(ERA Residence参考、Cove動きの演出方針より) -->
+<nav class="rail" aria-label="ページ内ナビゲーション">
+  <div class="rail__track"><div class="rail__fill" id="railFill"></div></div>
+  <div class="rail__count"><span id="railCurrent">01</span><span class="rail__slash">/</span><span id="railTotal">09</span></div>
+  <ul class="rail__list">
+    <li><a href="#hero" data-rail="1">Hero</a></li>
+    <li><a href="#collection" data-rail="2">Collection</a></li>
+    <li><a href="#craft" data-rail="3">Craft</a></li>
+    <li><a href="#details" data-rail="4">Details</a></li>
+    <li><a href="#gallery" data-rail="5">Gallery</a></li>
+    <li><a href="#testimonial" data-rail="6">Voices</a></li>
+    <li><a href="#stockists" data-rail="7">Stockists</a></li>
+    <li><a href="#newsletter" data-rail="8">Newsletter</a></li>
+    <li><a href="#site-footer" data-rail="9">Footer</a></li>
+  </ul>
+</nav>
+
+<header class="site-header">
+  <a href="#hero" class="logo">LINEN CLOUD</a>
+  <nav class="site-header__nav">
+    <a href="#collection">Collection</a>
+    <a href="#craft">Craft</a>
+    <a href="#stockists">Stockists</a>
+  </nav>
+  <a href="#newsletter" class="btn-line">お問い合わせ</a>
+</header>
+
+<main>
+
+  <!-- ============ 01. HERO ============
+       技法: GSAP画像レイヤー(技法A原理・Cookie Coデモ)をリネン布に応用
+       + hero-heading-scale-down(見出しscale 1.06→1、Core Atelier Pilates原理)
+       + 文字単位spanへの事前分解(伸びしろ設計、Phive Clubs原理・演出は控えめに)
+  -->
+  <section id="hero" class="hero">
+    <div class="hero__stage">
+      <img class="hero__fabric" id="heroFabric" src="img/hero-fabric.jpg" alt="リネンの布が柔らかく広がる質感" loading="eager">
+      <img class="hero__button" id="heroButton" src="img/hero-button.png" alt="" aria-hidden="true">
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal-fade">ORGANIC COTTON &amp; LINEN · MADE FOR SMALL HANDS</p>
+      <h1 class="hero__title" id="heroTitle" aria-label="Soft enough for the first day.">
+        <span class="split-line">Soft enough</span>
+        <span class="split-line">for the <em>first day</em>.</span>
+      </h1>
+      <p class="hero__lead reveal-fade">肌にふれる時間がいちばん長いから、<br>素材から選びました。</p>
+      <div class="hero__actions reveal-fade">
+        <a href="#collection" class="btn-primary">コレクションを見る</a>
+        <a href="#craft" class="link-underline">私たちの素材へ ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02. COLLECTION / LOOKBOOK ============
+       技法: staggered-fade-scroll-reveal(こびとの森歯科原理、200ms刻みtranslateY)
+  -->
+  <section id="collection" class="collection">
+    <div class="section-head">
+      <p class="section-eyebrow">LOOKBOOK — 2026 AUTUMN</p>
+      <h2 class="section-title">This season, <em>in soft focus.</em></h2>
+    </div>
+    <div class="collection__grid">
+      <article class="collection__card stagger-item">
+        <div class="collection__img"><img src="img/collection-1.jpg" alt="オーガニックコットンのカーディガン、たたんだ状態のフラットレイ"></div>
+        <h3>Cloud Cardigan</h3>
+        <p>オーガニックコットン100% ／ ¥8,800</p>
+      </article>
+      <article class="collection__card stagger-item">
+        <div class="collection__img"><img src="img/collection-2.jpg" alt="リネン混のワンピース、ハンガーにかけた状態"></div>
+        <h3>Linen Slip Dress</h3>
+        <p>リネン55% コットン45% ／ ¥9,600</p>
+      </article>
+      <article class="collection__card stagger-item">
+        <div class="collection__img"><img src="img/collection-3.jpg" alt="靴下2足のフラットレイ、リブ編みの質感アップ"></div>
+        <h3>Ribbed Socks Set</h3>
+        <p>オーガニックコットン100% ／ ¥2,200</p>
+      </article>
+      <article class="collection__card stagger-item">
+        <div class="collection__img"><img src="img/collection-4.jpg" alt="リネンのハット、置き画"></div>
+        <h3>Linen Sun Hat</h3>
+        <p>リネン100% ／ ¥5,200</p>
+      </article>
+    </div>
+    <a href="#" class="btn-line collection__more">すべてのコレクションを見る</a>
+  </section>
+
+  <!-- ============ 03. CRAFT / STORY ============
+       技法: scroll-desaturate-to-color-reveal(Overseas Asian Bistro原理、grayscale+blur→カラー)
+       + 多層scrubパララックス(Studio OFF-BEAT原理、layer毎にscrub値を変えて奥行き)
+  -->
+  <section id="craft" class="craft">
+    <div class="craft__bg-wrap">
+      <img class="craft__bg" id="craftBg" src="img/craft-fabric.jpg" alt="リネン生地の織り目クローズアップ">
+    </div>
+    <div class="craft__content">
+      <p class="craft__eyebrow" data-parallax="text">CRAFT &amp; MATERIAL</p>
+      <h2 class="section-title section-title--light" data-parallax="text">
+        「かわいい」の前に、<br><em>静かに気持ちいい</em>、を。
+      </h2>
+      <p class="craft__body" data-parallax="text">
+        LINEN CLOUDは、フランス・ノルマンディー産のリネンと、
+        インド・グジャラート州のオーガニックコットンだけを使います。
+        染色は植物由来の顔料で、生地は洗うほどに柔らかくなるように織り方から設計しました。
+        「見た目のかわいさ」より先に、肌に触れた瞬間の心地よさを決めてから、色と形を選んでいます。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 04. DETAILS ============
+       技法: pinned-circle-to-fullbleed-image(Pretty Patty原理、円形→画面幅いっぱいへscrub拡大)
+  -->
+  <section id="details" class="details">
+    <div class="details__pin">
+      <p class="section-eyebrow">DETAILS</p>
+      <h2 class="section-title">Every stitch, <em>considered.</em></h2>
+      <div class="details__circle-wrap">
+        <img class="details__img" id="detailsImg" src="img/details-stitch.jpg" alt="ステッチとタグのクローズアップ">
+      </div>
+      <p class="details__caption">ステッチの間隔は3.2mm。タグは縫い付けず、外から取り外せる仕様にしています。</p>
+    </div>
+  </section>
+
+  <!-- ============ 05. GALLERY ============
+       技法: cursor-following-label-pill(Maria João Abrantes原理、デスクトップのみ・hover:noneで無効化)
+       + 横スクロールギャラリー
+  -->
+  <section id="gallery" class="gallery">
+    <div class="section-head">
+      <p class="section-eyebrow">GALLERY</p>
+      <h2 class="section-title">Everyday moments, <em>in linen.</em></h2>
+    </div>
+    <div class="gallery__track" id="galleryTrack">
+      <figure class="gallery__item" data-cursor-label="うしろ姿">
+        <img src="img/gallery-1.jpg" alt="子供の後ろ姿、リネンのワンピースを着用(顔は写さない構図)">
+      </figure>
+      <figure class="gallery__item" data-cursor-label="てのひら">
+        <img src="img/gallery-2.jpg" alt="小さな手が生地をつまむクローズアップ">
+      </figure>
+      <figure class="gallery__item" data-cursor-label="あしもと">
+        <img src="img/gallery-3.jpg" alt="靴下を履いた足元のクローズアップ">
+      </figure>
+      <figure class="gallery__item" data-cursor-label="シルエット">
+        <img src="img/gallery-4.jpg" alt="窓辺に立つシルエット、逆光の中の子供服">
+      </figure>
+    </div>
+    <div class="gallery__cursor-pill" id="cursorPill" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- ============ 06. TESTIMONIAL ============
+       技法: per-letter-split-headline-crossfade原理(文字spanに分解、控えめなfade)
+       + staggered card reveal(弱め・落ち着いたトーン)
+  -->
+  <section id="testimonial" class="testimonial">
+    <h2 class="section-title split-chars" aria-label="使ってくださった方の、ひとこと。">
+      使ってくださった方の、<em>ひとこと。</em>
+    </h2>
+    <div class="testimonial__grid">
+      <blockquote class="testimonial__card stagger-item">
+        <p>「一歳の子が肌をかいていたのが、リネンの服に替えてから落ち着きました。」</p>
+        <cite>— M.K様(1歳児の保護者)</cite>
+      </blockquote>
+      <blockquote class="testimonial__card stagger-item">
+        <p>「出産祝いに贈って、とても喜ばれました。色が主張しすぎないのがいいです。」</p>
+        <cite>— S.T様(ギフト購入)</cite>
+      </blockquote>
+      <blockquote class="testimonial__card stagger-item">
+        <p>「洗うほど柔らかくなるのが本当でした。3歳になった今もお気に入りです。」</p>
+        <cite>— A.N様(3歳児の保護者)</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ 07. STOCKISTS ============
+       技法: diagonal-dual-row-marqueeの原理を弱めたバージョン(Coveの ticker-bg 方式、
+       回転なし・低速150s・1行のみ。上品トーン向けに強度を落として適応)
+  -->
+  <section id="stockists" class="stockists">
+    <div class="section-head">
+      <p class="section-eyebrow">STOCKISTS</p>
+      <h2 class="section-title">Find us, <em>near and far.</em></h2>
+    </div>
+    <div class="stockists__marquee" aria-hidden="true">
+      <div class="stockists__track">
+        <span>Tokyo — Aoyama</span><span>Kyoto — Kawaramachi</span><span>Online Store</span>
+        <span>Fukuoka — Daimyo</span><span>Sapporo — Odori</span><span>Nagoya — Sakae</span>
+        <span>Tokyo — Aoyama</span><span>Kyoto — Kawaramachi</span><span>Online Store</span>
+        <span>Fukuoka — Daimyo</span><span>Sapporo — Odori</span><span>Nagoya — Sakae</span>
+      </div>
+    </div>
+    <ul class="stockists__list">
+      <li><span>LINEN CLOUD Aoyama</span><span>東京都港区南青山</span></li>
+      <li><span>LINEN CLOUD Kyoto</span><span>京都府京都市中京区</span></li>
+      <li><span>Online Store</span><a href="#" class="link-underline">オンラインストアで見る →</a></li>
+    </ul>
+  </section>
+
+  <!-- ============ 08. NEWSLETTER / CONTACT ============
+       技法: マイクロインタラクション(フォームラベルのfloat、送信ボタンのtransform hover)
+  -->
+  <section id="newsletter" class="newsletter">
+    <div class="newsletter__inner">
+      <h2 class="section-title section-title--light">次の入荷を、<em>いちばん先に。</em></h2>
+      <p class="newsletter__lead">季節ごとの新作とファブリックの話を、月1通ほどお届けします。</p>
+      <form class="newsletter__form" onsubmit="return false;">
+        <div class="field">
+          <input type="email" id="nlEmail" required placeholder=" ">
+          <label for="nlEmail">メールアドレス</label>
+        </div>
+        <button type="submit" class="btn-primary btn-primary--light">登録する</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============
+     技法: svg-logo-line-draw原理(il Colorista Salon原理をプリローダーからフッター到達演出へ転用)
+-->
+<footer id="site-footer" class="site-footer">
+  <svg class="footer__logo-draw" id="footerLogoDraw" viewBox="0 0 240 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path id="logoPathCloud" d="M40 55C25 55 15 46 15 35C15 25 24 17 34 18C36 8 46 2 57 4C67 6 74 15 73 25C85 25 94 33 93 43C92 52 83 58 73 57" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+    <path id="logoPathThread" d="M110 20C130 20 130 60 150 60C170 60 170 20 190 20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+  </svg>
+  <div class="site-footer__grid">
+    <div>
+      <p class="site-footer__brand">LINEN CLOUD</p>
+      <p class="site-footer__note">肌にいちばん近いものだから、静かでいてほしい。</p>
+    </div>
+    <nav class="site-footer__nav">
+      <a href="#collection">Collection</a>
+      <a href="#craft">Craft</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#stockists">Stockists</a>
+    </nav>
+    <div class="site-footer__sns">
+      <a href="#">Instagram</a>
+      <a href="#">Online Store</a>
+    </div>
+  </div>
+  <p class="site-footer__copyright">© 2026 LINEN CLOUD — a sample brand by Cove Studio.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
